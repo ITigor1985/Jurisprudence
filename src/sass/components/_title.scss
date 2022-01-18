@@ -1,3 +1,21 @@
-.title {
-  color: #45464b;
+.titleh1 {
+  color: var(--text-white-color);
+  @include font(36px, 400, 43px);
+  @media screen and(min-width: 768px) {
+    @include font(60px, 400, 70px);
+  }
+  @media screen and(min-width: 1280px) {
+    @include font(60px, 400, 70px);
+  }
+}
+
+.titleh2 {
+  color: var(--text-color);
+  @include font(24px, 400, 29px);
+  @media screen and(min-width: 768px) {
+    @include font(36px, 400, 43px);
+  }
+  @media screen and(min-width: 1280px) {
+    @include font(48px, 400, 57px);
+  }
 }

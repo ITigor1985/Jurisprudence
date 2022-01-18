@@ -1,17 +1,29 @@
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Marmelad';
+  src: url('../fonts/Marmelad-Regular.eot');
+  src: local('☺'), url('../fonts/Marmelad-Regular.woff') format('woff'),
+    url('../fonts/Marmelad-Regular.ttf') format('truetype'),
+    url('../fonts/Marmelad-Regular.svg') format('svg');
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(../fonts/Roboto-Regular.woff) format('woff'),
-    url(../fonts/Roboto-Regular.woff2) format('woff2');
 }
 
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-ExtraBold.eot');
+  src: local('☺'), url('../fonts/Poppins-ExtraBold.woff') format('woff'),
+    url('../fonts/Poppins-ExtraBold.ttf') format('truetype'),
+    url('../fonts/Poppins-ExtraBold.svg') format('svg');
+  font-weight: 800;
   font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(../fonts/Roboto-Medium.woff) format('woff'),
-    url(../fonts/Roboto-Medium.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.eot');
+  src: local('☺'), url('../fonts/Poppins-Regular.woff') format('woff'),
+    url('../fonts/Poppins-Regular.ttf') format('truetype'),
+    url('../fonts/Poppins-Regular.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }

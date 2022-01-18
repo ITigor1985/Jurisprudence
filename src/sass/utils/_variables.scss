@@ -1,17 +1,17 @@
 :root {
   // Color
-  --primary-white-color: #ffffff;
-  --brand-orange-color: #ff6b08;
-  --text-color: #000000;
-  --logo-color: #818181;
-  --notification-red-color: #ff001b;
-  --footer-bg-color: #f7f7f7;
+  --primary-color: #974d26; //var(--primary-color);
+  --secondry-color: #d85730; //var(--secondry-color);
+  --beige-color: #e8b872; //var(--beige-color);
+  --bodily-color: #f4ca95; //var(--bodily-color);
+  --text-color: #252525; //var(--text-color);
+  --text-white-color: #fff; //var(--text-white-color);
   // Shadow
-  --btn-active-shadow: 0px 8px 43px rgba(255, 107, 1, 0.6);
-  --btn-hover-shadow: drop-shadow(0px 8px 43px rgba(255, 107, 1, 0.6));
+  --btn-normal: var(--primary-color);
+  --btn-active-color: var(--beige-color);
+  --btn-hover-shadow: drop-shadow(05px 5px 9px rgba(0, 0, 0, 0.25));
   // Fonts
-  --main-font: 'Roboto', sans-serif;
+  --main-font: 'Poppins', sans-serif;
+  --headers-font: 'Marmelad', sans-serif;
   //transition
-  --duration: 250ms;
-  --timing-function: linear;
 }
