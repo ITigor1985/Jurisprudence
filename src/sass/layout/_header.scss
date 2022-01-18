@@ -1,11 +1,10 @@
 .header-mid {
   position: relative;
-  background-image: linear-gradient(rgba(54, 67, 113, 0.6), rgba(54, 67, 113, 0.6)),
-    url(../images/header/mobile/header_mobile_img.jpg);
+  background-image: url(../images/header/mobile/first_screen.jpg);
   background-size: cover, cover;
   background-position: center, center;
   background-repeat: no-repeat, no-repeat;
-  min-height: 721px;
+  min-height: 727px;
   padding-top: 235px;
 }
 
@@ -92,12 +91,11 @@
     box-shadow: inset 3px 4px 6px rgba(0, 0, 0, 0.25), inset 5px 6px 10px #ea7c21;
   }
 }
-
-@media screen and (min-width: 768px) {
+@include min-width('medium') {
   .header-mid {
-    background-image: url(../images/header/tablet/header_tablet_img.jpg);
-    background-size: 100% 567px;
-    min-height: 567px;
+    background-image: url(../images/header/tablet/first_screen.jpg);
+    background-size: cover, cover;
+    min-height: 924px;
     padding-top: 225px;
   }
 
@@ -134,7 +132,7 @@
     right: -75px;
     width: 456px;
     height: 456px;
-    background-image: url(../images/header/tablet/car.png);
+
     background-repeat: no-repeat;
   }
   .header-mid__form-title {
@@ -173,12 +171,12 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@include min-width('large') {
   .header-mid {
     position: relative;
-    background-image: url(../images/header/desktop/header_desktop_img.jpg);
-    background-size: 100% 815px;
-    min-height: 815px;
+    background-image: url(../images/header/desktop/first_screen.jpg);
+    background-size: cover, cover;
+    min-height: 637px;
     padding-top: 71px;
   }
 
@@ -201,7 +199,7 @@
     left: 0;
     width: 65px;
     height: 65px;
-    background-image: url(../images/header/desktop/adres.png);
+
     transform: translateY(-50%);
     background-repeat: no-repeat;
   }
@@ -231,7 +229,7 @@
     right: -75px;
     width: 597px;
     height: 597px;
-    background-image: url(../images/header/desktop/car_desctop@1x.png);
+
     background-repeat: no-repeat;
   }
   .header-mid__form-title {

@@ -15,7 +15,7 @@
   display: none;
 }
 
-@media screen and(min-width: 768px) {
+@include min-width('medium') {
   .header-top__price-link-mobile {
     display: none;
   }
@@ -29,7 +29,7 @@
   }
 }
 
-@media screen and(min-width: 1440px) {
+@include min-width('large') {
   .header-top.container {
     padding-top: 20px;
     padding-bottom: 20px;
