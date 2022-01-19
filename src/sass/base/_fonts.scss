@@ -27,3 +27,13 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Light.eot');
+  src: local('☺'), url('../fonts/Poppins-Light.woff') format('woff'),
+    url('../fonts/Poppins-Light.ttf') format('truetype'),
+    url('../fonts/Poppins-Light.svg') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}

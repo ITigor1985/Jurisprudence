@@ -7,11 +7,11 @@
   --text-color: #252525; //var(--text-color);
   --text-white-color: #fff; //var(--text-white-color);
   // Shadow
-  --btn-normal: var(--primary-color);
+  --btn-normal: var(--secondry-color);
   --btn-active-color: var(--beige-color);
-  --btn-hover-shadow: drop-shadow(05px 5px 9px rgba(0, 0, 0, 0.25));
+  --btn-hover-shadow: drop-shadow(5px 5px 9px rgba(0, 0, 0, 0.25));
   // Fonts
-  --main-font: 'Poppins', sans-serif;
-  --headers-font: 'Marmelad', sans-serif;
+  --main-font: 'Poppins', sans-serif; //var(--main-font);
+  --headers-font: 'Marmelad', sans-serif; //var(--headers-font);
   //transition
 }

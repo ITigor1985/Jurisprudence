@@ -1,0 +1,94 @@
+.about-as {
+  padding-top: 70px;
+  padding-bottom: 50px;
+  @include min-width('medium') {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  @include min-width('large') {
+    padding-top: 70px;
+    padding-bottom: 250px;
+  }
+}
+.about-as .container {
+  @include min-width('large') {
+    width: 985px;
+    margin: 0 auto;
+  }
+}
+
+.about-as__title {
+  text-align: center;
+  margin-bottom: 50px;
+  @include min-width('medium') {
+    text-align: left;
+    margin-bottom: 80px;
+  }
+  @include min-width('large') {
+    text-align: left;
+    margin-bottom: 100px;
+  }
+}
+.about-as__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @include min-width('medium') {
+    position: relative;
+    align-items: start;
+  }
+  @include min-width('large') {
+    position: relative;
+  }
+}
+.about-as__description-part1,
+.about-as__description-part2 {
+  @include font(12px, 400, 17px);
+  margin-bottom: 14px;
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    width: 381px;
+  }
+  @include min-width('large') {
+    @include font(16px, 400, 22px);
+    width: 541px;
+  }
+}
+
+.about-as__img-wrapper {
+  width: 256px;
+  height: 277px;
+  box-shadow: 12px 11px var(--beige-color);
+  margin-bottom: 25px;
+  @include min-width('medium') {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 252px;
+    height: 324px;
+  }
+  @include min-width('large') {
+    width: 369px;
+    height: 469px;
+    top: -90px;
+    right: 12px;
+  }
+}
+
+.about-as__team-img {
+  @include min-width('large') {
+    width: 369px;
+    height: 469px;
+  }
+}
+.part1,
+.part3 {
+  margin-bottom: 12px;
+  @include min-width('medium') {
+    margin-bottom: 14px;
+  }
+  @include min-width('large') {
+    margin-bottom: 18px;
+  }
+}
