@@ -1,12 +1,21 @@
-.header-top.container {
+.header-top .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 20px;
   padding-bottom: 20px;
 }
+.header-top {
+  background-color: var(--secondry-color);
+}
 .header-top__price-link {
-  display: none;
+  color: var(--text-white-color);
+  display: block;
+  &.posts,
+  &.our,
+  &.review {
+    display: none;
+  }
 }
 .header-top__price-link-mobile {
   @include font(18px, 700, 28px);
@@ -25,7 +34,10 @@
   }
   .header-top__price-link {
     display: block;
-    @include font(18px, 700, 28px);
+    @include font(16px, 600, 24px);
+    &.review {
+      display: block;
+    }
   }
 }
 
@@ -35,15 +47,17 @@
     padding-bottom: 20px;
   }
   .header-top__price-link {
-    @include font(24px, 700, 28px);
+    @include font(16px, 700, 24px);
+    &.posts,
+    &.our {
+      display: block;
+    }
   }
   .header-top__call-list {
     display: block;
-    @include font(24px, 500, 28px);
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 28px;
-    color: #2f4377;
+    @include font(16px, 400, 24px);
+
+    color: var(--text-white-color);
     & .header-top__call-item {
       margin-bottom: 8px;
     }
