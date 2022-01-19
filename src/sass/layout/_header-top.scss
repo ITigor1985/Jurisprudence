@@ -47,7 +47,7 @@
     padding-bottom: 20px;
   }
   .header-top__price-link {
-    @include font(16px, 700, 24px);
+    @include font(16px, 400, 24px);
     &.posts,
     &.our {
       display: block;
