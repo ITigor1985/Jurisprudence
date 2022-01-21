@@ -1,8 +1,10 @@
 .faq {
-  max-width: 335px;
-  border-bottom: 1px solid #d3d3d3;
+  max-width: 425px;
 
-  margin: 0 auto 15px;
+  margin: 0 auto 23px;
+}
+.faqs .container {
+  max-width: 425px;
 }
 .faq__title {
   text-align: center;
@@ -10,13 +12,15 @@
 }
 .question {
   display: flex;
+  background: var(--primary-color);
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
+  padding: 14px 11px;
 }
 
 .question h3 {
-  @include font(14px, 700, 21px);
+  color: var(--text-white-color);
+  @include font(14px, 600, 20px);
 }
 
 .answer {
@@ -25,14 +29,42 @@
   transition: max-height 1.4s ease;
 }
 
-.answer p {
+.answer__list {
   @include font(14px, 300, 21px);
-  padding-bottom: 8px;
-  background-image: url(../images/header/mobile/first_screen.jpg);
+  background-image: url(../images/price/mobile/phone_price_img.jpg);
+  padding-left: 12px;
+  padding-right: 12px;
+  & > :last-child {
+    border-bottom: none;
+  }
+}
+
+.answer__list-item {
+  padding: 30px 0px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.answer__list-item-description {
+  margin-bottom: 15px;
+}
+
+.answer__wrapper-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.answer__cost {
+  @include font(20px, 400, 28px);
+}
+.answer__button {
+  @include font(18px, 800, 21px);
+  color: var(--text-white-color);
+  background: var(--secondry-color);
+  padding: 12px 42px;
 }
 
 .faq.active .answer {
-  max-height: 300px;
+  max-height: 678px;
   overflow: auto;
   animation: fade 1s ease-in-out;
 }

@@ -11,6 +11,7 @@
   }
 }
 .about-as .container {
+  max-width: 425px;
   @include min-width('large') {
     width: 985px;
     margin: 0 auto;

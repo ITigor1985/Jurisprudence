@@ -10,6 +10,9 @@
     padding-bottom: 100px;
   }
 }
+.our_destinations .container {
+  max-width: 425px;
+}
 
 .our_destinations .container {
   @include min-width('large') {
