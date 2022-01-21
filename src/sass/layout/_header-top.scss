@@ -2,8 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  height: 73px;
 }
 .header-top {
   background-color: var(--secondry-color);
@@ -28,9 +27,8 @@
   .header-top__price-link-mobile {
     display: none;
   }
-  .header-top.container {
-    padding-top: 24px;
-    padding-bottom: 24px;
+  .header-top .container {
+    height: 100px;
   }
   .header-top__price-link {
     display: block;
@@ -42,9 +40,8 @@
 }
 
 @include min-width('large') {
-  .header-top.container {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .header-top .container {
+    height: 83px;
   }
   .header-top__price-link {
     @include font(16px, 400, 24px);
