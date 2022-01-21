@@ -4,7 +4,12 @@
   margin: 0 auto 23px;
 }
 .faqs .container {
-  max-width: 425px;
+  // max-width: 425px;
+  // padding-left: 0;
+  // padding-right: 0;
+  // @include min-width('medium') {
+  //   max-width: 768px;
+  // }
 }
 .faq__title {
   text-align: center;
@@ -32,6 +37,8 @@
 .answer__list {
   @include font(14px, 300, 21px);
   background-image: url(../images/price/mobile/phone_price_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   padding-left: 12px;
   padding-right: 12px;
   & > :last-child {

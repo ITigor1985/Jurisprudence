@@ -1,7 +1,7 @@
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  min-width: 320px;
+  padding: 0 0px;
+  width: 320px;
 
   @include min-width('medium') {
     width: 666px;
