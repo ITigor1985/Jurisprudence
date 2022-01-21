@@ -1,0 +1,118 @@
+.our_destinations {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include min-width('large') {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+.our_destinations .container {
+  @include min-width('large') {
+    width: 977px;
+    margin: 0 auto;
+  }
+}
+
+.our_destinations__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.our_destinations__list {
+  & > :last-child {
+    margin-bottom: 0px;
+  }
+}
+.our_destinations__list-item {
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 13px rgba(0, 0, 0, 0.25);
+  @include min-width('medium') {
+    display: flex;
+  }
+  @include min-width('large') {
+    margin-bottom: 47px;
+  }
+}
+
+.our_destinations__title-destination-wrapper {
+  position: relative;
+  background-image: url(../images/our-destination/mobile/phone_criminal_img.jpg);
+  background-size: cover, cover;
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  min-width: 320px;
+  min-height: 227px;
+  @include min-width('medium') {
+    margin-right: 21px;
+    min-width: 255px;
+    min-height: 255px;
+    background-image: url(../images/our-destination/tablet/tablet_criminal_img.jpg);
+  }
+  @include min-width('large') {
+    margin-right: 44px;
+    min-width: 337px;
+    min-height: 336px;
+    background-image: url(../images/our-destination/desctop/desktop_criminal_img.jpg);
+  }
+}
+.our_destinations__title-destination-wrapper.administrative {
+  background-image: url(../images/our-destination/mobile/phone_administrative_img.jpg);
+  @include min-width('medium') {
+    background-image: url(../images/our-destination/tablet/tablet_administrative_img.jpg);
+  }
+  @include min-width('large') {
+    background-image: url(../images/our-destination/desctop/desktop_administrative_img.jpg);
+  }
+}
+.our_destinations__title-destination-wrapper.civil {
+  background-image: url(../images/our-destination/mobile/phone_civil_img.jpg);
+  @include min-width('medium') {
+    background-image: url(../images/our-destination/tablet/tablet_civil_img.jpg);
+  }
+  @include min-width('large') {
+    background-image: url(../images/our-destination/desctop/desktop_civil_img.jpg);
+  }
+}
+.our_destinations__title-destination-wrapper.economic {
+  background-image: url(../images/our-destination/mobile/phone_economic_img.jpg);
+  @include min-width('medium') {
+    background-image: url(../images/our-destination/tablet/tablet_economic_img.jpg);
+  }
+  @include min-width('large') {
+    background-image: url(../images/our-destination/desctop/desktop_economic_img.jpg);
+  }
+}
+.our_destinations__title-destination {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  width: 100%;
+  height: 92px;
+  @include font(18px, 400, 25px);
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  @include min-width('medium') {
+    height: 104px;
+  }
+  @include min-width('large') {
+    height: 146px;
+    @include font(24px, 400, 34px);
+  }
+}
+.our_destinations__description {
+  @include font(12px, 400, 17px);
+  padding: 30px 5px;
+  @include min-width('medium') {
+    display: flex;
+    align-items: center;
+    @include font(14px, 400, 20px);
+    padding-right: 13px;
+  }
+  @include min-width('large') {
+    @include font(16px, 400, 22px);
+    padding-right: 43px;
+  }
+}
