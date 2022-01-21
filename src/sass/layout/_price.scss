@@ -1,7 +1,9 @@
 .faq {
   max-width: 425px;
-
   margin: 0 auto 23px;
+  // @include min-width('medium') {
+  //   margin-bottom: 0;
+  // }
 }
 .faqs .container {
   max-width: 425px;
@@ -21,21 +23,34 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 11px;
+  @include min-width('medium') {
+    @include font(16px, 600, 22px);
+    padding-top: 13px;
+    padding-bottom: 13px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 .question h3 {
   color: var(--text-white-color);
+
   @include font(14px, 600, 20px);
+  @include min-width('medium') {
+    @include font(16px, 600, 22px);
+  }
 }
 
 .answer {
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
+  @include min-width('medium') {
+  }
 }
 
 .answer__list {
-  @include font(14px, 300, 21px);
+  @include font(14px, 400, 17px);
   background-image: url(../images/price/mobile/phone_price_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,21 +59,53 @@
   & > :last-child {
     border-bottom: none;
   }
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    background-image: url(../images/price/tablet/tablet_price_img.jpg);
+    height: 384px;
+    padding-top: 42px;
+    padding-bottom: 42px;
+
+    & > :nth-child(2n + 1) {
+      margin-bottom: 30px;
+    }
+    & > :nth-child(2) {
+      margin-bottom: 40px;
+    }
+  }
 }
 
 .answer__list-item {
   padding: 30px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  @include min-width('medium') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
 }
 
 .answer__list-item-description {
   margin-bottom: 15px;
+  @include min-width('medium') {
+    width: 319px;
+    margin-bottom: 0;
+  }
+  @include min-width('large') {
+    width: 457px;
+  }
 }
 
 .answer__wrapper-cost {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include min-width('medium') {
+    margin-left: auto;
+  }
 }
 .answer__cost {
   @include font(20px, 400, 28px);
@@ -68,6 +115,9 @@
   color: var(--text-white-color);
   background: var(--secondry-color);
   padding: 12px 42px;
+  @include min-width('medium') {
+    margin-left: 24px;
+  }
 }
 
 .faq.active .answer {
@@ -97,18 +147,12 @@ svg {
     @include font(36px, 700, 42px);
   }
   .faq {
-    max-width: 618px;
-    margin: 0 auto 18px;
+    max-width: 768px;
   }
   .question {
-    margin-bottom: 20px;
   }
   .question h3 {
     @include font(18px, 700, 21px);
-  }
-  .answer p {
-    @include font(16px, 300, 21px);
-    padding-bottom: 18px;
   }
 }
 
