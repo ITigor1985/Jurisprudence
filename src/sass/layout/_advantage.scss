@@ -17,6 +17,10 @@
 .advantage .container {
   display: flex;
   align-items: center;
+  @include min-width('medium') {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .advantge__list {

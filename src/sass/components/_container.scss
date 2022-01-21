@@ -1,12 +1,15 @@
 .container {
   margin: 0 auto;
-  padding: 0 0px;
-  width: 320px;
+  padding: 0 15px;
+  min-width: 320px;
+  max-width: 425px;
 
   @include min-width('medium') {
     width: 666px;
+    max-width: 666px;
   }
   @include min-width('large') {
     width: 1180px;
+    max-width: 1180px;
   }
 }

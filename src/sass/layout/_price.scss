@@ -4,12 +4,12 @@
   margin: 0 auto 23px;
 }
 .faqs .container {
-  // max-width: 425px;
-  // padding-left: 0;
-  // padding-right: 0;
-  // @include min-width('medium') {
-  //   max-width: 768px;
-  // }
+  max-width: 425px;
+  padding-left: 0;
+  padding-right: 0;
+  @include min-width('medium') {
+    max-width: 768px;
+  }
 }
 .faq__title {
   text-align: center;
