@@ -28,6 +28,9 @@
     text-align: left;
     margin-bottom: 60px;
   }
+  @include min-width('large') {
+    margin-bottom: 100px;
+  }
 }
 .question {
   display: flex;
