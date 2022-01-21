@@ -37,3 +37,13 @@
   font-weight: 300;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-SemiBold.eot');
+  src: local('☺'), url('../fonts/Poppins-SemiBold.woff') format('woff'),
+    url('../fonts/Poppins-SemiBold.ttf') format('truetype'),
+    url('../fonts/Poppins-SemiBold.svg') format('svg');
+  font-weight: 600;
+  font-style: normal;
+}

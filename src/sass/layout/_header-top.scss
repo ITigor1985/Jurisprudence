@@ -9,6 +9,7 @@
 }
 .header-top__price-link {
   color: var(--text-white-color);
+  @include font(12px, 600, 18px);
   display: block;
   &.posts,
   &.our,
@@ -37,6 +38,15 @@
       display: block;
     }
   }
+  .contacts {
+    display: none;
+  }
+  .header-top__call-list {
+    display: block;
+    @include font(16px, 600, 24px);
+
+    color: var(--text-white-color);
+  }
 }
 
 @include min-width('large') {
@@ -44,7 +54,7 @@
     height: 83px;
   }
   .header-top__price-link {
-    @include font(16px, 400, 24px);
+    @include font(16px, 600, 24px);
     &.posts,
     &.our {
       display: block;
@@ -52,9 +62,7 @@
   }
   .header-top__call-list {
     display: block;
-    @include font(16px, 400, 24px);
 
-    color: var(--text-white-color);
     & .header-top__call-item {
       margin-bottom: 8px;
     }
