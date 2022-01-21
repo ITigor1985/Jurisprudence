@@ -1,9 +1,12 @@
 .faq {
   max-width: 425px;
   margin: 0 auto 23px;
-  // @include min-width('medium') {
-  //   margin-bottom: 0;
-  // }
+  @include min-width('medium') {
+    max-width: 768px;
+  }
+  @include min-width('large') {
+    max-width: 979px;
+  }
 }
 .faqs .container {
   max-width: 425px;
@@ -12,10 +15,17 @@
   @include min-width('medium') {
     max-width: 768px;
   }
+  @include min-width('large') {
+    max-width: 979px;
+  }
 }
 .faq__title {
   text-align: center;
   margin-bottom: 50px;
+  @include min-width('medium') {
+    text-align: left;
+    margin-bottom: 60px;
+  }
 }
 .question {
   display: flex;
@@ -141,16 +151,7 @@ svg {
   .faqs {
     padding-top: 30px;
   }
-  .faq__title {
-    text-align: center;
-    margin-bottom: 60px;
-    @include font(36px, 700, 42px);
-  }
-  .faq {
-    max-width: 768px;
-  }
-  .question {
-  }
+
   .question h3 {
     @include font(18px, 700, 21px);
   }
@@ -160,13 +161,9 @@ svg {
   .faqs {
     padding-top: 75px;
   }
-  .faq__title {
-    text-align: center;
-    margin-bottom: 60px;
-    @include font(48px, 700, 56px);
-  }
+
   .faq {
-    max-width: 807px;
+    width: 979px;
     margin: 0 auto 20px;
   }
   .question {
