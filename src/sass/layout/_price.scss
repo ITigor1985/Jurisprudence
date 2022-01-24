@@ -109,7 +109,7 @@
 }
 .answer.third {
   background-image: url(../images/price/mobile/bg-mobile-third.jpg);
-  height: 358px;
+  height: auto;
   @include min-width('medium') {
     background-image: url(../images/price/tablet/bg-tablet-third.jpg);
   }
