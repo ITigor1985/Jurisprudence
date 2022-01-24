@@ -120,6 +120,7 @@
   }
 }
 .answer.fourth {
+  height: auto;
 }
 
 .answer__list {
@@ -214,6 +215,16 @@
     }
     & > :last-child {
       margin-bottom: 0px;
+    }
+    & > li:last-child > p {
+      margin-bottom: 15px;
+    }
+    & > li:last-child {
+      display: flex;
+      flex-direction: column;
+    }
+    & > li:last-child > div {
+      margin-left: 0;
     }
   }
 }
