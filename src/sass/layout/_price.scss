@@ -269,10 +269,15 @@
   }
 }
 .answer__button {
-  @include font(18px, 800, 21px);
+  padding: 12px 35px;
   color: var(--text-white-color);
   background: var(--secondry-color);
-  padding: 12px 42px;
+  @include font(18px, 800, 21px);
+
+  @media screen and(min-width:360px) {
+    padding: 12px 42px;
+  }
+
   @include min-width('medium') {
     margin-left: 24px;
   }
