@@ -119,6 +119,8 @@
     background-image: url(../images/price/desctop/bg-desktop-third.jpg);
   }
 }
+.answer.fourth {
+}
 
 .answer__list {
   @include font(14px, 400, 17px);
@@ -181,9 +183,55 @@
     }
   }
 }
+.package {
+  text-align: center;
+  @include font(16px, 600, 22px);
+  margin-top: 40px;
+  padding-top: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.answer__list.fourth {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  list-style-type: '\2714';
+  padding-left: 30px;
+  padding-right: 15px;
+  & > li {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 15px;
+    & > p {
+      margin-bottom: 0;
+    }
+  }
+  & > li:last-child > p {
+    margin-bottom: 30px;
+  }
+  @include min-width('medium') {
+    & > :nth-child(n + 1) {
+      margin-bottom: 34px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
 .answer__list-item {
   padding: 30px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  @include min-width('medium') {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+.answer__list-item.fourth {
+  padding: 0px 0px;
+  border-bottom: none;
   @include min-width('medium') {
     display: flex;
     align-items: center;
@@ -237,10 +285,11 @@
 
 .faq.active .answer {
   max-height: 678px;
-  overflow: auto;
+  overflow: hidden;
   animation: fade 1s ease-in-out;
 }
 .faq.active .answer.second {
+  overflow: hidden;
   max-height: 705px;
 }
 
