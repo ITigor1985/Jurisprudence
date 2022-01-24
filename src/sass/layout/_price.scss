@@ -21,6 +21,17 @@
     max-width: 979px;
   }
 }
+.answer__costs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include min-width('medium') {
+    width: 136px;
+  }
+  @include min-width('large') {
+    width: 157px;
+  }
+}
 .faq__title {
   text-align: center;
   margin-bottom: 50px;
@@ -70,15 +81,48 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 1.4s ease;
+  background-image: url(../images/price/mobile/phone_price_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   @include min-width('medium') {
+    background-image: url(../images/price/tablet/tablet_price_img.jpg);
+    height: 384px;
+  }
+  @include min-width('large') {
+    height: 475px;
+    background-image: url(../images/price/desctop/price_img.jpg);
+  }
+}
+.answer.second {
+  height: 727px;
+  background-image: url(../images/price/mobile/bg-second-mobile.jpg);
+
+  @include min-width('medium') {
+    background-image: url(../images/price/tablet/bg-tablet.jpg);
+    height: 470px;
+  }
+  @include min-width('large') {
+    overflow: hidden;
+    height: 575px;
+    background-image: url(../images/price/desctop/bg-desktop.jpg);
+  }
+}
+.answer.third {
+  background-image: url(../images/price/mobile/bg-mobile-third.jpg);
+  height: 358px;
+  @include min-width('medium') {
+    background-image: url(../images/price/tablet/bg-tablet-third.jpg);
+  }
+  @include min-width('large') {
+    overflow: hidden;
+    height: 575px;
+    background-image: url(../images/price/desctop/bg-desktop.jpg);
   }
 }
 
 .answer__list {
   @include font(14px, 400, 17px);
-  background-image: url(../images/price/mobile/phone_price_img.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  overflow: hidden;
   padding-left: 12px;
   padding-right: 12px;
   & > :last-child {
@@ -86,10 +130,8 @@
   }
   @include min-width('medium') {
     @include font(14px, 400, 20px);
-    background-image: url(../images/price/tablet/tablet_price_img.jpg);
-    height: 384px;
-    padding-top: 42px;
-    padding-bottom: 42px;
+    padding-top: 37px;
+    padding-bottom: 37px;
 
     & > :nth-child(2n + 1) {
       margin-bottom: 30px;
@@ -99,9 +141,7 @@
     }
   }
   @include min-width('large') {
-    height: 475px;
-    padding: 76px 29px;
-    background-image: url(../images/price/desctop/price_img.jpg);
+    padding: 75px 29px;
     & > :nth-child(2n + 1) {
       margin-bottom: 40px;
     }
@@ -110,7 +150,37 @@
     }
   }
 }
-
+.answer__list.second {
+  @include min-width('medium') {
+    padding-top: 49px;
+    padding-bottom: 49px;
+    & > :nth-child(n + 1) {
+      margin-bottom: 34px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+  @include min-width('large') {
+    padding: 69px 29px;
+    & > :nth-child(n + 1) {
+      margin-bottom: 41px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
+.answer__list.third {
+  @include min-width('medium') {
+    & > :nth-child(n + 1) {
+      margin-bottom: 34px;
+    }
+    & > :last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
 .answer__list-item {
   padding: 30px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
@@ -131,7 +201,7 @@
     margin-bottom: 0;
   }
   @include min-width('large') {
-    @include font(16px, 400, 22px);
+    @include font(18px, 400, 22px);
     width: 457px;
   }
 }
@@ -169,6 +239,9 @@
   max-height: 678px;
   overflow: auto;
   animation: fade 1s ease-in-out;
+}
+.faq.active .answer.second {
+  max-height: 705px;
 }
 
 .faq.active svg {
