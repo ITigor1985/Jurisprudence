@@ -228,15 +228,26 @@
     & > li:last-child > p {
       margin-bottom: 15px;
     }
+    & > li > p {
+      width: 450px;
+    }
     & > li:last-child {
       display: flex;
       flex-direction: column;
+      align-items: space-around;
     }
     & > li:last-child > div {
       margin-left: 0;
     }
   }
 }
+
+.answer__list.fourth .answer__wrapper-cost {
+  @include min-width('medium') {
+    width: 450px;
+  }
+}
+
 .answer__list-item {
   padding: 30px 0px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.5);
