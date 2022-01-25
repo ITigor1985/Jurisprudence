@@ -346,6 +346,26 @@
     margin-left: 53px;
   }
 }
+.price__agreement {
+  @include font(12px, 400, 17px);
+  margin-top: 50px;
+  padding-bottom: 50px;
+
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    margin-top: 70px;
+    padding-left: 23px;
+    padding-right: 23px;
+    padding-bottom: 70px;
+  }
+  @include min-width('large') {
+    @include font(16px, 400, 22px);
+    margin-top: 75px;
+    padding-left: 96px;
+    padding-right: 96px;
+    padding-bottom: 75px;
+  }
+}
 
 .faq.active .answer {
   max-height: 678px;
