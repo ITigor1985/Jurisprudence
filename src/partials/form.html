@@ -1,0 +1,29 @@
+<div class="form-section">
+    <div class="container">
+        <p class="form-title titleh2">Записаться на консультацию</p>
+            <p class="form-description">
+                Мы свяжемся с вами в течении 15 минут
+            </p>
+        <form action="sendmail.php" method="POST" class="form" >
+            
+            <input
+              class="form-input"
+              minlength="2"
+              type="text"
+              name="name"
+              id="form-username"
+              placeholder="Ваше Имя"
+              required
+            />
+            <input
+              class="form-input"
+              type="tel"
+              name="telephone"
+              id="form-telephon"
+              placeholder="Ваш телефон"
+              required
+            />
+            <button type="submit" class="button ">Отправить</button>
+          </form>
+    </div>
+</div>
