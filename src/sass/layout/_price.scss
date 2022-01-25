@@ -121,6 +121,13 @@
 }
 .answer.fourth {
   height: auto;
+  background-image: none;
+}
+
+.answer-wrapper {
+  background-image: url(../images/price/desctop/price_abonent_img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .answer__list {
@@ -195,7 +202,8 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.6);
-  list-style-type: '\2714';
+
+  list-style-image: url(../images/price/desctop/vector.png);
   padding-left: 30px;
   padding-right: 15px;
   & > li {
@@ -210,6 +218,7 @@
     margin-bottom: 30px;
   }
   @include min-width('medium') {
+    list-style-image: url(../images/price/desctop/vector.png);
     & > :nth-child(n + 1) {
       margin-bottom: 34px;
     }
