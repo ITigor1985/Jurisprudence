@@ -11,6 +11,7 @@
     background-image: url(../images/form/tablet/form_img.jpg);
   }
 }
+
 .form {
   padding: 0px 5px;
   display: flex;
@@ -21,6 +22,11 @@
   @include min-width('large') {
     flex-direction: row;
     align-items: center;
+  }
+}
+.form-section .container {
+  @include min-width('large') {
+    max-width: 979px;
   }
 }
 
@@ -63,6 +69,8 @@
   @include min-width('medium') {
   }
   @include min-width('large') {
+    width: 332px;
+    margin-right: 23px;
     height: 51px;
     margin-bottom: 0;
   }
@@ -88,5 +96,8 @@
   &:active {
     background-color: var(--btn-active-color);
     color: var(--primary-color);
+  }
+  @include min-width('large') {
+    height: 51px;
   }
 }
