@@ -15,8 +15,8 @@ const c=document.querySelectorAll(".faq");c.forEach(c=>{c.addEventListener("clic
 },{}],"dE7Y":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-shown")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"cDEs":[function(require,module,exports) {
-$(document).ready(function(){const o=document.body.clientWidth;o>=768&&o<=1440&&$(".work__list").slick({infinite:!1,dots:!1,arrows:!1,slidesToShow:5,slidesToScroll:5})});
+$(document).ready(function(){$(".reviews__list").slick({infinite:!1,dots:!1,arrows:!0,slidesToShow:1,slidesToScroll:1})});
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("material-icons/iconfont/filled.css"),require("aos/dist/aos.css"),require("./sass/main.scss"),require("./js/aos.js"),require("./js/faq.js"),require("./js/backdrop"),require("./js/slick");
 },{"material-icons/iconfont/filled.css":"N8cg","aos/dist/aos.css":"cOFZ","./sass/main.scss":"clu1","./js/aos.js":"Spyv","./js/faq.js":"DnZU","./js/backdrop":"dE7Y","./js/slick":"cDEs"}]},{},["Focm"], null)
-//# sourceMappingURL=src.2b13f74e.js.map
+//# sourceMappingURL=src.31aec30d.js.map
