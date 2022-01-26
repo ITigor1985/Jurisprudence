@@ -10,7 +10,12 @@
     padding-bottom: 100px;
   }
 }
-
+.reviews .container {
+  @include min-width('large') {
+    min-width: 100vw;
+    padding-left: 0;
+  }
+}
 .reviews__list {
   position: relative;
   padding-left: 0px;
