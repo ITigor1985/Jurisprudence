@@ -12,8 +12,9 @@
 }
 .reviews .container {
   @include min-width('large') {
-    min-width: 100vw;
+    min-width: 99vw;
     padding-left: 0;
+    padding-right: 0;
   }
 }
 .reviews__list {
