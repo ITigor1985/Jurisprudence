@@ -74,6 +74,12 @@
     margin-bottom: 60px;
   }
 }
+.reviews__title.container {
+  @include min-width('large') {
+    width: 879px !important;
+    min-width: 949px;
+  }
+}
 .reviews__list-item {
   display: flex;
   height: 373px;
