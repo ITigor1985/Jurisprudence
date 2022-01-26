@@ -19,4 +19,4 @@ $(document).ready(function(){$(".reviews__list").slick({infinite:!1,dots:!1,arro
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("material-icons/iconfont/filled.css"),require("aos/dist/aos.css"),require("./sass/main.scss"),require("./js/aos.js"),require("./js/faq.js"),require("./js/backdrop"),require("./js/slick");
 },{"material-icons/iconfont/filled.css":"N8cg","aos/dist/aos.css":"cOFZ","./sass/main.scss":"clu1","./js/aos.js":"Spyv","./js/faq.js":"DnZU","./js/backdrop":"dE7Y","./js/slick":"cDEs"}]},{},["Focm"], null)
-//# sourceMappingURL=src.dc1865aa.js.map
+//# sourceMappingURL=src.e1d60947.js.map
