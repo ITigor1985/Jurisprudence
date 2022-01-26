@@ -5,7 +5,7 @@ $(document).ready(function () {
     arrows: true,
     infinite: true,
     centerMode: true,
-    centerPadding: '350px',
+    centerPadding: '450px',
     slidesToShow: 1,
     slidesToScroll: 1,
     responsive: [
