@@ -15,8 +15,8 @@ const c=document.querySelectorAll(".faq");c.forEach(c=>{c.addEventListener("clic
 },{}],"dE7Y":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-shown")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"cDEs":[function(require,module,exports) {
-$(document).ready(function(){$(".reviews__list").slick({infinite:!1,dots:!1,arrows:!0,slidesToShow:1,slidesToScroll:1})});
+$(document).ready(function(){$(".reviews__list").slick({infinite:!1,dots:!1,arrows:!0,infinite:!0,centerMode:!0,centerPadding:"250px",slidesToShow:1,slidesToScroll:1,responsive:[{breakpoint:1024,settings:{slidesToShow:1,slidesToScroll:1,centerPadding:"0px"}}]})});
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("material-icons/iconfont/filled.css"),require("aos/dist/aos.css"),require("./sass/main.scss"),require("./js/aos.js"),require("./js/faq.js"),require("./js/backdrop"),require("./js/slick");
 },{"material-icons/iconfont/filled.css":"N8cg","aos/dist/aos.css":"cOFZ","./sass/main.scss":"clu1","./js/aos.js":"Spyv","./js/faq.js":"DnZU","./js/backdrop":"dE7Y","./js/slick":"cDEs"}]},{},["Focm"], null)
-//# sourceMappingURL=src.9790c36f.js.map
+//# sourceMappingURL=src.dc1865aa.js.map
