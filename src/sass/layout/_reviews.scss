@@ -76,6 +76,7 @@
   }
 }
 .reviews__title.container {
+  min-width: 290px;
   @include min-width('large') {
     width: 879px !important;
     min-width: 949px;
