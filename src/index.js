@@ -9,3 +9,4 @@ import './js/faq.js';
 import './js/backdrop';
 
 import './js/slick';
+import './js/articles-slick';
