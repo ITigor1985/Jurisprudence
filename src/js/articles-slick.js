@@ -1,6 +1,6 @@
 $(document).ready(function () {
     const width = document.body.clientWidth;
-    if (width >= 768 && width <= 1280) {
+    if (width >= 768 && width < 1280) {
       $('.articls__list').slick({
         infinite: true,
         dots: false,
