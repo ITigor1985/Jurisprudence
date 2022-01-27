@@ -1,4 +1,4 @@
-.form-section {
+.last-form-section {
   background-image: url(../images/last-form/mobile/form_img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -24,7 +24,7 @@
     align-items: center;
   }
 }
-.form-section .container {
+.last-form-section .container {
   @include min-width('large') {
     max-width: 979px;
   }
