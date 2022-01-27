@@ -6,37 +6,46 @@
   padding-bottom: 43px;
   @include min-width('medium') {
     background-image: url(../images/last-form/tablet/form_img.jpg);
+    height: 537px;
   }
   @include min-width('large') {
     background-image: url(../images/last-form/tablet/form_img.jpg);
+    height: 639px;
   }
 }
 
-.form {
+.last-form-section .form {
   padding: 0px 5px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 9px;
   margin: 0 auto;
+  @include min-width('medium') {
+    border: 4px solid #ffffff;
+    padding: 49px 53px;
+  }
   @include min-width('large') {
-    flex-direction: row;
     align-items: center;
+    padding: 37px 52px;
   }
 }
 .last-form-section .container {
+  @include min-width('medium') {
+  }
   @include min-width('large') {
     max-width: 979px;
   }
 }
 
-.form-title {
+.last-form-section .form-title {
   margin: 0 auto;
 
   margin-bottom: 7px;
   color: var(--text-white-color);
   width: 165px;
   @include min-width('medium') {
+    text-align: center;
     width: 100%;
     margin: 0;
     margin-bottom: 17px;
@@ -46,22 +55,22 @@
   }
 }
 
-.form-description {
+.last-form-section .form-description {
   @include font(14px, 400, 20px);
   color: var(--text-white-color);
   text-align: center;
   margin-bottom: 21px;
   @include min-width('medium') {
-    @include font(18px, 400, 25px);
-    text-align: left;
-    margin-bottom: 46px;
+    @include font(16px, 400, 19px);
+    text-align: center;
+    margin-bottom: 40px;
   }
   @include min-width('large') {
     @include font(24px, 400, 34px);
     margin-bottom: 62px;
   }
 }
-.form-input {
+.last-form-section .form-input {
   min-width: 280px;
   display: block;
   padding-left: 13px;
@@ -81,7 +90,7 @@
   @include font(12px, 300, 14px);
   color: #9b9999;
 }
-.form .button {
+.last-form-section .form .button {
   padding: 10px 0;
   min-width: 280px;
   background-color: var(--btn-normal);
@@ -98,7 +107,18 @@
     background-color: var(--btn-active-color);
     color: var(--primary-color);
   }
+  @include min-width('medium') {
+    margin-bottom: 40px;
+  }
   @include min-width('large') {
     height: 51px;
+  }
+}
+
+.form-description.last {
+  display: none;
+  @include min-width('medium') {
+    display: block;
+    margin-bottom: 0;
   }
 }

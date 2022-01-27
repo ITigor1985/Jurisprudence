@@ -22,6 +22,9 @@
   @include min-width('medium') {
     margin-bottom: 50px;
   }
+  @include min-width('large') {
+    margin-bottom: 100px;
+  }
 }
 .articls__title.container {
   @include min-width('medium') {

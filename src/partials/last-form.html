@@ -1,13 +1,13 @@
 <div class="last-form-section" >
     <div class="container">
-        <p class="form-title titleh2">Записаться на консультацию</p>
+        
+        <form action="sendmail.php" method="POST" class="form" >
+            <p class="form-title titleh2">Записаться на консультацию</p>
             <p class="form-description">
                 Попали в сложную ситуацию? 
 Нужна консультация специалиста?
 Оставьте заявку и мы свяжемся с вами.
             </p>
-        <form action="sendmail.php" method="POST" class="form" >
-            
             <input
               class="form-input"
               minlength="2"
@@ -26,6 +26,9 @@
               required
             />
             <button type="submit" class="button ">Отправить</button>
+            <p class="form-description last">
+                Ваши данные в безопасности и не будут переданы третьим лицам
+            </p>
           </form>
     </div>
 </div>
