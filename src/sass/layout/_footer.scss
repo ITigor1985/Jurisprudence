@@ -3,9 +3,31 @@
   background: var(--primary-color);
   color: var(--text-white-color);
   padding: 40px 27px;
+  @include min-width('medium') {
+    position: relative;
+    padding: 40px 0px;
+  }
 }
 .footer .container {
   min-width: 290px;
+  @include min-width('medium') {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.footer .logo {
+  @include min-width('medium') {
+    margin-right: 35px;
+  }
+}
+.wrapper {
+  @include min-width('medium') {
+    display: flex;
+    flex-direction: row-reverse;
+    & > :not(:first-child) {
+      margin-right: 35px;
+    }
+  }
 }
 .footer .header__logo {
   display: block;
@@ -24,6 +46,13 @@
 .footer__address {
   margin-bottom: 27px;
 }
+.address-wrapper {
+  @include min-width('medium') {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
 .footer__contacts__call-list {
   display: flex;
   flex-direction: column;
@@ -35,6 +64,14 @@
   & > :not(:last-child) {
     margin-bottom: 8px;
   }
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    border-bottom: none;
+    align-items: start;
+    & > :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 .footer__about-as-list {
   display: flex;
@@ -45,25 +82,68 @@
   & > :not(:last-child) {
     margin-bottom: 8px;
   }
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    align-items: start;
+    & > :not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 .footer__law {
   text-align: center;
+  @include min-width('medium') {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .footer__address-title {
   display: none;
+  @include min-width('medium') {
+    display: block;
+    margin-bottom: 16px;
+  }
 }
 
 .footer__contacts-title {
   display: none;
+  @include min-width('medium') {
+    display: block;
+    margin-bottom: 16px;
+  }
 }
 
 .footer__about-as-title {
   display: none;
+  @include min-width('medium') {
+    display: block;
+    margin-bottom: 16px;
+  }
 }
+
 .footer__street {
   margin-bottom: 25px;
-}
-.footer__street {
   text-align: center;
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+    text-align: left;
+  }
+}
+.footer__contacts__call-link {
+  @include min-width('medium') {
+    @include font(14px, 400, 20px);
+  }
+}
+.footer__about-as-wrapper {
+  @include min-width('medium') {
+    min-width: 136px;
+  }
+}
+.contacts-wrapper {
+  @include min-width('medium') {
+    min-width: 141px;
+  }
 }
