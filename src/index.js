@@ -7,6 +7,7 @@ import './sass/main.scss';
 import './js/aos.js';
 import './js/faq.js';
 import './js/backdrop';
+import './js/scroll';
 
 import './js/slick';
 import './js/articles-slick';
