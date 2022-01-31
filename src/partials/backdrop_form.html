@@ -1,34 +1,29 @@
-<div class="backdrop-form" data-modal-form>
-    <div class="modal-window">
-    <button type="button" class="modal-form-window__close-btn" data-modal-close>
+<div class="backdrop-form is-shown" data-modal-form>
+  <div class="backdrop-form__modal-window">
+    <button type="button" class="backdrop-form__close-btn" data-modal-close>
       <span class="material-icons">close</span>
     </button>
-    <div class="container">        
-            <p class="form-description">
-                Мы свяжемся с вами в течение 15 минут
-            </p>
-        <form action="sendmail.php" method="POST" class="form" >
-            
-            <input
-              class="form-input"
-              minlength="2"
-              type="text"
-              name="name"
-              id="form-username"
-              placeholder="Ваше Имя"
-              required
-            />
-            <input
-              class="form-input"
-              type="tel"
-              name="telephone"
-              id="form-telephon"
-              placeholder="Ваш телефон"
-              required
-            />
-            <button type="submit" class="button ">Отправить</button>
-          </form>
-    </div>
+
+    <p class="backdrop-form__description">Мы свяжемся с вами в течение 15 минут</p>
+    <form action="sendmail.php" method="POST" class="backdrop-form__form">
+      <input
+        class="backdrop-form-input"
+        minlength="2"
+        type="text"
+        name="name"
+        id="form-username"
+        placeholder="Ваше Имя"
+        required
+      />
+      <input
+        class="backdrop-form-input"
+        type="tel"
+        name="telephone"
+        id="form-telephon"
+        placeholder="Ваш телефон"
+        required
+      />
+      <button type="submit" class="backdrop-form__button">Отправить</button>
+    </form>
   </div>
-</div>
 </div>
