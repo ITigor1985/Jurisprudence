@@ -18,7 +18,6 @@
     faq.addEventListener('click', faqActive);
 
     function faqActive(e) {
-      console.log(e.target.nodeName);
       if (e.target.nodeName !== 'BUTTON') {
         faq.classList.toggle('active');
       } else {
