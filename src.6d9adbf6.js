@@ -11,7 +11,7 @@ var e,t=arguments[3];!function(t,n){"object"==typeof exports&&"undefined"!=typeo
 },{}],"Spyv":[function(require,module,exports) {
 "use strict";var e=t(require("aos"));function t(e){return e&&e.__esModule?e:{default:e}}e.default.init({easing:"ease"});
 },{"aos":"RKkx"}],"DnZU":[function(require,module,exports) {
-const e=document.querySelector("[data-modal-form]"),t=document.querySelector(".header-mid__button"),o=document.querySelector("[data-modal-form-close]");function c(){e.classList.add("is-shown")}function n(){e.classList.remove("is-shown")}t.addEventListener("click",c),o.addEventListener("click",n);const s=document.querySelectorAll(".faq");s.forEach(t=>{t.addEventListener("click",function(o){console.log(o.target.nodeName),"BUTTON"!==o.target.nodeName?t.classList.toggle("active"):e.classList.toggle("is-shown")})});
+(()=>{const e=document.querySelector("[data-modal-form]"),t=document.querySelector(".header-mid__button"),o=document.querySelector("[data-modal-form-close]");t.addEventListener("click",function(){e.classList.add("is-shown")}),o.addEventListener("click",function(){e.classList.remove("is-shown")}),document.querySelectorAll(".faq").forEach(t=>{t.addEventListener("click",function(o){console.log(o.target.nodeName),"BUTTON"!==o.target.nodeName?t.classList.toggle("active"):e.classList.toggle("is-shown")})})})();
 },{}],"dE7Y":[function(require,module,exports) {
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-shown")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"N8YO":[function(require,module,exports) {
@@ -23,4 +23,4 @@ $(document).ready(function(){const i=document.body.clientWidth;i>=768&&i<1280&&$
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("material-icons/iconfont/filled.css"),require("aos/dist/aos.css"),require("./sass/main.scss"),require("./js/aos.js"),require("./js/faq.js"),require("./js/backdrop"),require("./js/scroll"),require("./js/slick"),require("./js/articles-slick");
 },{"material-icons/iconfont/filled.css":"N8cg","aos/dist/aos.css":"cOFZ","./sass/main.scss":"clu1","./js/aos.js":"Spyv","./js/faq.js":"DnZU","./js/backdrop":"dE7Y","./js/scroll":"N8YO","./js/slick":"cDEs","./js/articles-slick":"WBAV"}]},{},["Focm"], null)
-//# sourceMappingURL=src.9e3a8316.js.map
+//# sourceMappingURL=src.6d9adbf6.js.map
