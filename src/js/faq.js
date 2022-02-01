@@ -8,7 +8,16 @@ faqs.forEach(faq => {
 
   function faqActive(e) {
     console.log(e.target.nodeName);
-    if (e.target.nodeName !== 'BUTTON') faq.classList.toggle('active');
+    if (e.target.nodeName !== 'BUTTON') {
+      faq.classList.toggle('active');
+    } else {
+      toggleModal();
+    }
+  }
+
+  closeForm.addEventListener('click', closeModal);
+  function closeModal() {
+    modalForm.classList.remove('is-shown');
   }
 
   function toggleModal() {
