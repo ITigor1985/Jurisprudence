@@ -51,6 +51,17 @@
   width: 275px;
   height: 340px;
   z-index: 102;
+  @include min-width('medium') {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    width: 440px;
+    height: 349px;
+  }
+  @include min-width('large') {
+    padding-top: 33px;
+    padding-bottom: 46px;
+    width: 469px;
+  }
 }
 
 .backdrop-form__description {
@@ -61,6 +72,16 @@
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  @include min-width('medium') {
+    width: 246px;
+    @include font(20px, 400, 28px);
+    margin-bottom: 37px;
+  }
+  @include min-width('large') {
+    width: 246px;
+    @include font(24px, 400, 34px);
+    margin-bottom: 24px;
+  }
 }
 .backdrop-form__form {
   display: flex;
@@ -75,12 +96,22 @@
   margin-bottom: 14px;
   padding-left: 16px;
   background-color: rgba(255, 255, 255, 0.2);
+  @include min-width('medium') {
+    width: 280px;
+  }
+  @include min-width('large') {
+    width: 332px;
+    margin-bottom: 15px;
+  }
 }
 
 ::placeholder {
   font-style: italic;
   @include font(12px, 300, 14px);
   color: rgba(255, 255, 255, 0.5);
+  @include min-width('medium') {
+    @include font(16px, 300, 19px);
+  }
 }
 .backdrop-form__button {
   width: 229px;
@@ -88,4 +119,10 @@
   @include font(18px, 800, 21px);
   background: var(--beige-color);
   color: var(--primary-color);
+  @include min-width('medium') {
+    width: 280px;
+  }
+  @include min-width('large') {
+    width: 332px;
+  }
 }
