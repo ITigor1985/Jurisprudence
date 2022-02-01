@@ -1,6 +1,16 @@
 const modalForm = document.querySelector('[data-modal-form]');
-const openForm = document.querySelector('.answer__button');
+const openForm = document.querySelector('.header-mid__button');
 const closeForm = document.querySelector('[data-modal-form-close]');
+
+openForm.addEventListener('click', openModal);
+function openModal() {
+  modalForm.classList.add('is-shown');
+}
+closeForm.addEventListener('click', closeModal);
+
+function closeModal() {
+  modalForm.classList.remove('is-shown');
+}
 
 const faqs = document.querySelectorAll('.faq');
 faqs.forEach(faq => {
@@ -13,11 +23,6 @@ faqs.forEach(faq => {
     } else {
       toggleModal();
     }
-  }
-
-  closeForm.addEventListener('click', closeModal);
-  function closeModal() {
-    modalForm.classList.remove('is-shown');
   }
 
   function toggleModal() {
