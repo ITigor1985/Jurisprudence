@@ -34,6 +34,6 @@ $mail->AltBody = '';
 if(!$mail->send()) {
     echo 'Error';
 } else {
-    header('location: https://www.sfera-shtukatur.dp.ua/');
+    header('location: https://www.liga.net.ua/');
 }
 ?>
