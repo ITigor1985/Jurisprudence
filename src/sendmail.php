@@ -12,12 +12,12 @@ $phone = $_POST['telephone'];
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'mail.adm.tools';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'sferabud@sfera-shtukatur.dp.ua'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Norik1409'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = 'liga@liga.net.ua'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = 'Gr1Zvlk22'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
-$mail->setFrom('sferabud@sfera-shtukatur.dp.ua'); // от кого будет уходить письмо?
+$mail->setFrom('liga@liga.net.ua'); // от кого будет уходить письмо?
 $mail->addAddress('xromer85@gmail.com');     // Кому будет уходить письмо 
 //$mail->addAddress('ellen@example.com');               // Name is optional
 //$mail->addReplyTo('info@example.com', 'Information');
